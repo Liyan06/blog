@@ -107,7 +107,7 @@ Paper reference: <a href=https://aclanthology.org/2020.acl-main.454.pdf>https://
 <p>This work evaluates the faithfulness of generated summary through CNN/DM (more extractive) and XSum (highly abstractive) datasets.</p>
 <p>Experiments show that, on both datasets, outputs having less word overlap with the source document are more likely to be unfaithful and the number of unfaithful sentences increases as the summary becomes more abstractive.</p>
 <h2 id=feqa-faithfulness-evaluation-with-question-answering>FEQA: Faithfulness Evaluation with Question Answering<a hidden class=anchor aria-hidden=true href=#feqa-faithfulness-evaluation-with-question-answering>#</a></h2>
-<img style=display:block;margin:auto src=/FEQA/FEQA_structure.png width=800>
+<img style=display:block;margin:auto src=/blog/FEQA/FEQA_structure.png width=800>
 <p>Given a summary sentence and its corresponding source document, important text spans (e.g. noun phrases, entities) in the summary are masked using a constituency parser and an NER model. Then, each span is considered as the answer and generate its corresponding question using a BART model. Lastly, a QA model finds answers to these questions in the documents. More matched answers from the document implies a more faithful summary.</p>
 <h2 id=metric-comparison>Metric comparison<a hidden class=anchor aria-hidden=true href=#metric-comparison>#</a></h2>
 <blockquote>

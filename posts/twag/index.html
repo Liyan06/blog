@@ -120,7 +120,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.356.pdf>https://
 <h1 id=details>Details<a hidden class=anchor aria-hidden=true href=#details>#</a></h1>
 <h2 id=task-formulation>Task Formulation<a hidden class=anchor aria-hidden=true href=#task-formulation>#</a></h2>
 <p>The task is to automatically generate Wikipedia abstracts based on the related documents collected from referred websites or search engines.</p>
-<img style=display:block;margin:auto src=/TWAG/wiki_table.png width=370>
+<img style=display:block;margin:auto src=/blog/TWAG/wiki_table.png width=370>
 <p>Based on the observation that a Wikipedia article normally describes an object from different aspects/topics and that the abstract semantically corresponds to these topics, the paper proposes to utilize the topic information to guide sumarization.</p>
 <h2 id=method>Method<a hidden class=anchor aria-hidden=true href=#method>#</a></h2>
 <h3 id=overview>Overview<a hidden class=anchor aria-hidden=true href=#overview>#</a></h3>
@@ -129,7 +129,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.356.pdf>https://
 <li>Stage 1: Train a <em>topic detector</em> to predict a topic for each paragraph (normally a paragraph expresses relatively complete and compact semantics).</li>
 <li>Stage 2: Encode each topic separately and generate the abstract in a sentence-wise manner.</li>
 </ul>
-<img style=display:block;margin:auto src=/TWAG/TWAG_model.png width=570>
+<img style=display:block;margin:auto src=/blog/TWAG/TWAG_model.png width=570>
 <h3 id=stage-1---topic-detection>Stage 1 - Topic Detection<a hidden class=anchor aria-hidden=true href=#stage-1---topic-detection>#</a></h3>
 <p>The paper render topic detection as a classification problem. Given a paragraph $d_i$, the classification task is to predict the topic for $d_i$. The paper uses ALBert as the classification model.</p>
 <h3 id=stage-2---topic-aware-abstract-generation>Stage 2 - Topic-aware Abstract Generation<a hidden class=anchor aria-hidden=true href=#stage-2---topic-aware-abstract-generation>#</a></h3>

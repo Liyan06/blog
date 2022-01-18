@@ -106,7 +106,7 @@ Paper Review - Flexible Operations for Natural Language Deduction
 Paper reference: <a href=https://arxiv.org/abs/2104.08825>https://arxiv.org/abs/2104.08825</a></p>
 <h1 id=contribution>Contribution<a hidden class=anchor aria-hidden=true href=#contribution>#</a></h1>
 <p>This paper proposes an automated data generation method, <strong>ParaPattern</strong>, for building models capable of deductive reasoning and generating logical transformations (in particular <em>substitution</em> and <em>contraposition</em>) from diverse natural language inputs (premise statements) in an unsupervised way. Experiments show that the proposed data generation method leads to robust operation models capable of generating consistent logical transformations over a diverse range of natural language inputs.</p>
-<img style=display:block;margin:auto src=/flexible_operations_for/natural_deduction.png width=320>
+<img style=display:block;margin:auto src=/blog/flexible_operations_for/natural_deduction.png width=320>
 <h1 id=details>Details<a hidden class=anchor aria-hidden=true href=#details>#</a></h1>
 <h2 id=data-collection>Data Collection<a hidden class=anchor aria-hidden=true href=#data-collection>#</a></h2>
 <p>The proposed method <em>ParaPattern</em> crafts data with lexical variation and diversity based on <br>
@@ -114,7 +114,7 @@ Paper reference: <a href=https://arxiv.org/abs/2104.08825>https://arxiv.org/abs/
 (2) templated-based example construction; <br>
 (3) and a pretrained paraphrasing model.</p>
 <p>Once data for an operation has been generated, the paper uses it to fine-tune a BART-Large model.</p>
-<img style=display:block;margin:auto src=/flexible_operations_for/parapattern_pipeline.png width=520>
+<img style=display:block;margin:auto src=/blog/flexible_operations_for/parapattern_pipeline.png width=520>
 <h3 id=source-scraping>Source Scraping<a hidden class=anchor aria-hidden=true href=#source-scraping>#</a></h3>
 <p>Retrieve source sentences suitable for template expansion from Wikipedia article text. The paper uses six pattern variations to gather source sentences for the substitution template and two patterns for the contraposition template.</p>
 <h3 id=template-expansion>Template expansion<a hidden class=anchor aria-hidden=true href=#template-expansion>#</a></h3>

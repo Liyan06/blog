@@ -110,7 +110,7 @@ Paper Reference: <a href=https://aclanthology.org/2021.naacl-main.411.pdf>https:
 <h1 id=detail>Detail<a hidden class=anchor aria-hidden=true href=#detail>#</a></h1>
 <p>The paper uses a Food and Health summary dataset <em>HealthLine</em>, which consists of scientific abstracts as inputs and human written summaries as outputs. The task is to generate a text summary $y$ for a food from multiple scientific abstracts $X$.</p>
 <h2 id=model>Model<a hidden class=anchor aria-hidden=true href=#model>#</a></h2>
-<img style=display:block;margin:auto src=/Nutri_bullets/structure.png width=350>
+<img style=display:block;margin:auto src=/blog/Nutri_bullets/structure.png width=350>
 <h3 id=entity-extraction-and-relation-classification>Entity extraction and relation classification<a hidden class=anchor aria-hidden=true href=#entity-extraction-and-relation-classification>#</a></h3>
 <p>For both input documents $X$ and the summary $y$, food health entity-entity relations are extracted from entity extraction and relation classification modules trained on corresponding annotations, and then converted into a mini-database of relation tuples.</p>
 <h3 id=content-selection-and-aggregation>Content Selection and Aggregation<a hidden class=anchor aria-hidden=true href=#content-selection-and-aggregation>#</a></h3>

@@ -124,7 +124,7 @@ Paper reference: <a href=https://aclanthology.org/2021.naacl-main.112.pdf>https:
 </ul>
 <p>Among all encoder variants, learnable patterns perform the best, approaching the performance of full attentions.</p>
 <h2 id=encoder-decoder-attention-with-head-wise-positional-strides-hepos>Encoder-decoder Attention with Head-wise Positional Strides (HEPOS)<a hidden class=anchor aria-hidden=true href=#encoder-decoder-attention-with-head-wise-positional-strides-hepos>#</a></h2>
-<img style=display:block;margin:auto src=/efficient_attn_for/HEPOS_structure.png width=330>
+<img style=display:block;margin:auto src=/blog/efficient_attn_for/HEPOS_structure.png width=330>
 <p>HEPOS allows models to consume longer sequences and it is based on two observations:
 (1) Attention heads are redundant;
 (2) Any individual head rarely attends to several tokens in a row.</p>

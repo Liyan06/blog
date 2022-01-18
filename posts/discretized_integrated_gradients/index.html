@@ -105,7 +105,7 @@ Paper Review - Discretized Integrated Gradients for Explaining Language Models
 Paper reference: <a href=https://arxiv.org/pdf/2108.13654.pdf>https://arxiv.org/pdf/2108.13654.pdf</a></p>
 <h1 id=contribution>Contribution<a hidden class=anchor aria-hidden=true href=#contribution>#</a></h1>
 <p>The paper proposes <em>Discretized Integrated Gradients (DIG)</em>, which allows effective attribution along non-linear interpolation paths. Specifically, it monotonically interpolates between the input word embedding and baseline such that the intermediate points are close to real data samples. This would ensure that the interpolated points are more representative of the word embedding distribution, enabling more faithful model gradient computations.</p>
-<img style=display:block;margin:auto src=/Discretized_Integrated_Gradients/path.png width=220>
+<img style=display:block;margin:auto src=/blog/Discretized_Integrated_Gradients/path.png width=220>
 <p>(The blue line, DIG, is a bit misleading&mldr;)</p>
 <h1 id=details>Details<a hidden class=anchor aria-hidden=true href=#details>#</a></h1>
 <h2 id=drawbacks-of-integrated-gradient-ig>Drawbacks of Integrated Gradient (IG)<a hidden class=anchor aria-hidden=true href=#drawbacks-of-integrated-gradient-ig>#</a></h2>

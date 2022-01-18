@@ -144,7 +144,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.475.pdf>https://
 <li>If sentences have a high ROUGE score against the reference summary they are likely to contain an answer.</li>
 </ul>
 <h3 id=unified-masked-representation-umr>Unified Masked Representation (UMR)<a hidden class=anchor aria-hidden=true href=#unified-masked-representation-umr>#</a></h3>
-<img style=display:block;margin:auto src=/generating_query_focused/mask_summary.png width=450>
+<img style=display:block;margin:auto src=/blog/generating_query_focused/mask_summary.png width=450>
 <p>The paper renders queries and summaries in a Unified Masked Representation (UMR) which enables summaries to serve as <strong>proxy queries</strong> for model training. <strong>Therefore, even there are no real query during training, the ground truth summary can indeed be proxy queries to assist training.</strong></p>
 <blockquote>
 <p><strong>UMR for summaries:</strong> The UMR for a summary is indeed a summary where some arguments of propositions (using OpenIE) are randomly masked. <br>
@@ -158,7 +158,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.475.pdf>https://
 <h3 id=query-narrative-expansion>Query Narrative Expansion<a hidden class=anchor aria-hidden=true href=#query-narrative-expansion>#</a></h3>
 <p>In some cases queries may be relatively short and narratives absent. This can be problematic for the paper&rsquo;s setup since summary-based query proxies are typically long and detailed. To match the distribution, query narratives are automatically created for short queries in an unsupervised fashion.</p>
 <h2 id=query-focused-generation>Query Focused Generation<a hidden class=anchor aria-hidden=true href=#query-focused-generation>#</a></h2>
-<img style=display:block;margin:auto src=/generating_query_focused/query_framework.png width=400>
+<img style=display:block;margin:auto src=/blog/generating_query_focused/query_framework.png width=400>
 <p>The generation model $p_{\phi}(S | D, Q ; \phi)$ generates query focused abstractive summary $S$ conditioned on evidence provided by the query model and (optionally) the query itself.</p>
 <h3 id=summarization-input>Summarization Input<a hidden class=anchor aria-hidden=true href=#summarization-input>#</a></h3>
 <p>For each instance, all sentences are ranked in descending order according to their ROUGE-2 score against the reference summary. The pretrained language model is fine-tuned against this evidence-ranked list of sentences. During inference, when actual queries are available, top sentences ranked by the query model are used as input to generate.</p>

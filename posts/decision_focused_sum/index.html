@@ -144,7 +144,7 @@ where $\alpha, \beta, \gamma$ control the tradeoff between the three desiderata.
 <li><em>Attribution</em> methods such as IG, attention to rank and select sentences.</li>
 </ul>
 <p>Experiments show that baselines are not faithful ($\log |f(\tilde{X})-f(X)|$ is big)</p>
-<img style=display:block;margin:auto src=/decision_focused_sum/picking_sentences.png width=370>
+<img style=display:block;margin:auto src=/blog/decision_focused_sum/picking_sentences.png width=370>
 <hr>
 <p>Footnote: The distance between $\hat{Y}_{\tilde{X}}$ and $\hat{Y}_{X}$ is measured by Wasserstein Distance: $$W(\hat{Y}_{\tilde{X}}, \hat{Y}_{X})=\inf_{\gamma \in \Gamma\left(\hat{Y}_{\tilde{X}}, \hat{Y}_{X}\right)} \int_{\mathbb{R} \times \mathbb{R}} | f-f^{\prime}|| d \gamma\left(f, f^{\prime}\right),$$ where $\Gamma (\hat{Y}_{\tilde{X}}, \hat{Y}_{X})$ denotes the collection of all measures on $\mathbb{R} \times \mathbb{R}$ with marginals $\hat{Y}_{\tilde{X}}$ and $\hat{Y}_{X}$ on the first and second factors respectively.</p>
 </div>

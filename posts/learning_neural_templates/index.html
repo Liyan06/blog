@@ -107,7 +107,7 @@ Paper reference: <a href=https://arxiv.org/pdf/1808.10122.pdf>https://arxiv.org/
 <h2 id=task-definition>Task Definition<a hidden class=anchor aria-hidden=true href=#task-definition>#</a></h2>
 <p>This paper tackles a problem of generating an adequate and fluent text description of a database $x$ with a collection of records.</p>
 <h2 id=hsmm>HSMM<a hidden class=anchor aria-hidden=true href=#hsmm>#</a></h2>
-<img style=display:block;margin:auto src=/learning_neural_templates/structure.png width=400>
+<img style=display:block;margin:auto src=/blog/learning_neural_templates/structure.png width=400>
 <p>Hidden semi-markov model (HSMM) models <em>latent segmentations</em> in an output sequence. In HSMM, emissions may last multiple time-steps. The emission model models the generation of a text segment conditioned on a latent state and source information. It allows interdependence between tokens (but not segments) by having each next-token distribution depend on all the previously generated tokens.</p>
 <h2 id=extract-templates>Extract Templates<a hidden class=anchor aria-hidden=true href=#extract-templates>#</a></h2>
 <p>Templates are useful here because they make it clear what part of the generation is associated with which record in the knowledge base. Every segment in the generated $y$ is typed by its corresponding latent variable.</p>

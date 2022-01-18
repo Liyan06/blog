@@ -120,7 +120,7 @@ Paper reference: <a href=https://arxiv.org/pdf/2108.04106.pdf>https://arxiv.org/
 <p>In the few-shot setup, a model takes $K$ training examples $\mathcal{D}=\left\{\left(x^{1}, c^{1}\right), \cdots,\left(x^{K}, c^{K}\right)\right\}$. Examples are sampled uniformly (do not consider label imbalance).</p>
 <h2 id=demonstration-methods>Demonstration Methods<a hidden class=anchor aria-hidden=true href=#demonstration-methods>#</a></h2>
 <p>In the following three demonstration methods, there are no trainable parameters.</p>
-<img style=display:block;margin:auto src=/noisy_channel_language/formula.png width=650>
+<img style=display:block;margin:auto src=/blog/noisy_channel_language/formula.png width=650>
 <ul>
 <li><strong>Zero-shot.</strong></li>
 <li><strong>Concat-based demonstrations.</strong> Prepend a concatenation of $K$ training examples ${{x^j, v(c^j)}}$ to the input so that a language model can learn the task setup from the input.</li>
@@ -133,7 +133,7 @@ Paper reference: <a href=https://arxiv.org/pdf/2108.04106.pdf>https://arxiv.org/
 (3) channel models always outperform significantly under few-shot setting comparing to zero-shot setting.</p>
 <h2 id=tuning-methods>Tuning Methods<a hidden class=anchor aria-hidden=true href=#tuning-methods>#</a></h2>
 <p>The paper explores three tuning methods which update limited number of model parameters. Two of them worths attention.</p>
-<img style=display:block;margin:auto src=/noisy_channel_language/tuning_methods.png width=670>
+<img style=display:block;margin:auto src=/blog/noisy_channel_language/tuning_methods.png width=670>
 <ul>
 <li><strong>Head Tuning.</strong> Head tuning finetunes the head - the fully connected layer that transfers the dimensions from hidden representation size $h$ to vocal size $\mathcal{V}$. Other params of LM are fixed.</li>
 <li><strong>Prompt Tuning.</strong> Prepend $n$ prompt tokens $u_1 &mldr; u_n$ to the input. The parameters in the LM are frozen except the embeddings of $u_{1} \ldots u_{n}$.
@@ -148,7 +148,7 @@ Paper reference: <a href=https://arxiv.org/pdf/2108.04106.pdf>https://arxiv.org/
 (2) head tuning is a very strong method, although ignored in previous works. <br>
 (3) prompt tuning outperforms the demonstration method by using channel models. (<em>Demonstration methods v.s. Tuning methods</em>)</p>
 <h2 id=verbalizers-vc_i>Verbalizers ${v(c_i)}$<a hidden class=anchor aria-hidden=true href=#verbalizers-vc_i>#</a></h2>
-<img style=display:block;margin:auto src=/noisy_channel_language/verbalizer.png width=670>
+<img style=display:block;margin:auto src=/blog/noisy_channel_language/verbalizer.png width=670>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

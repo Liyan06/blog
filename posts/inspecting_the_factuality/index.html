@@ -128,7 +128,7 @@ $$</p>
 <h2 id=training-a-discriminator>Training a Discriminator<a hidden class=anchor aria-hidden=true href=#training-a-discriminator>#</a></h2>
 <p>The paper trains a KNN classifier (k=15 in the paper), using the prior and posterior probabilities, plus a binary overlap feature that indicates whether the entity appears in the document.</p>
 <p>Here is a visualization of trained KNN with bounds:
-<img style=display:block;margin:auto src=/inspecting_the_factuality/knn_visual.png width=350></p>
+<img style=display:block;margin:auto src=/blog/inspecting_the_factuality/knn_visual.png width=350></p>
 <h2 id=rules-for-determine-hallucination>Rules for Determine Hallucination<a hidden class=anchor aria-hidden=true href=#rules-for-determine-hallucination>#</a></h2>
 <p>(1) If the entity can be directly entailed from the source document, then the entity is non-hallucinated; <br>
 (2) Otherwise, decide whether the entity is factual using world knowledge; <br>

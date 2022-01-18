@@ -112,7 +112,7 @@ Paper reference: <a href=https://aclanthology.org/2020.acl-main.451.pdf>https://
 <h2 id=coreference-graph>Coreference Graph<a hidden class=anchor aria-hidden=true href=#coreference-graph>#</a></h2>
 <p>For each coreference cluster, all the discourse units containing the mention of the same cluster will be connected. This process is iterated over all the coreference mention clusters to create the final Coreference Graph.</p>
 <h2 id=model>Model<a hidden class=anchor aria-hidden=true href=#model>#</a></h2>
-<img style=display:block;margin:auto src=/discourse_aware_neural/discobert.png width=620>
+<img style=display:block;margin:auto src=/blog/discourse_aware_neural/discobert.png width=620>
 <p>The paper formulates the extractive summarization as a sequential labeling task, where each EDU is scored by neural networks, and decisions are made based on the scores of all EDUs. The creation of oracle labels is operated on EDU level. The paper greedily picks up EDUs with their necessary dependencies until R-1 F1 drops.</p>
 <p>Steps: <br>
 (1) A pretrained BERT model is first used to encode the whole document on the token level; <br>

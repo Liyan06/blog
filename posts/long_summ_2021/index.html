@@ -105,7 +105,7 @@ Paper reference: <a href=https://aclanthology.org/2021.sdp-1.12.pdf>https://acla
 <p>The results shows that the proposed method can generate sentences with high readability and cover important information of the paper. However, the fluency and coherence of the generated summary is insufficient.</p>
 <h1 id=details>Details<a hidden class=anchor aria-hidden=true href=#details>#</a></h1>
 <p>This paper addresses the problem of summarizing scientific documents and generating very long summaries. The paper splits the task into the following steps.</p>
-<img style=display:block;margin:auto src=/LongSumm_2021/session_structure.png width=270>
+<img style=display:block;margin:auto src=/blog/LongSumm_2021/session_structure.png width=270>
 <h2 id=session-generation>Session generation<a hidden class=anchor aria-hidden=true href=#session-generation>#</a></h2>
 <p>First, select the appropriate session size and a buffer (2048 and 128 words in the paper respectively). The buffer is used to keep the last text of the previous session as the context of the current session.</p>
 <p>Divide the ground truth summary into sentences, and assign sentences to each session according to the rouge score (continue adding more sentences until rouge score s of added sentences adds up to a certain value). In this way, a new dataset with (session, summary) pair is created.</p>

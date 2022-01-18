@@ -126,7 +126,7 @@ Paper reference: <a href=https://aclanthology.org/2021.naacl-main.114.pdf>https:
 <h4 id=sentence-factuality-model>Sentence-Factuality Model<a hidden class=anchor aria-hidden=true href=#sentence-factuality-model>#</a></h4>
 <p>Sentence-Factuality Model predicts by feeding the concatenation of the source document and the generated summary into BERT.</p>
 <h4 id=arc-factuality-model>Arc-Factuality model<a hidden class=anchor aria-hidden=true href=#arc-factuality-model>#</a></h4>
-<img style=display:block;margin:auto src=/Annotating_and_Modeling/DAE.png width=330>
+<img style=display:block;margin:auto src=/blog/Annotating_and_Modeling/DAE.png width=330>
 <p>The paper uses Dependency Arc Entailment (DAE) model to evaluate factuality at the dependency arc level. The DAE model predicts whether the relationship described by the arc is entailed by the input document. If any dependency arc is non-factual, the generated summary is labeled as non-factual.</p>
 <h3 id=downstream-application>Downstream Application<a hidden class=anchor aria-hidden=true href=#downstream-application>#</a></h3>
 <p>This paper proposes the training objective only maximizes the likelihood of factual words in the summary and ignore the tokens with unsupported facts. Training on unsupported acts will encourage the model to hallucinate new content.</p>

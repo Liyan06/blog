@@ -119,7 +119,7 @@ Paper reference: <a href=https://arxiv.org/pdf/2105.06597.pdf>https://arxiv.org/
 <h2 id=retrieval-grounded-text-generation>Retrieval Grounded Text Generation<a hidden class=anchor aria-hidden=true href=#retrieval-grounded-text-generation>#</a></h2>
 <p>Retrieval grounded text generation aims to predict the upcoming text $y$ that directly follows the existing source prompt (context queries) $x$ ($x, y$ are from a corpus $D$), with access to a document reference set $Z$ (not parallel with $D$).</p>
 <h2 id=retgen>RetGen<a hidden class=anchor aria-hidden=true href=#retgen>#</a></h2>
-<img style=display:block;margin:auto src=/joint_retrieval_and/joint_framework.png width=530>
+<img style=display:block;margin:auto src=/blog/joint_retrieval_and/joint_framework.png width=530>
 <p>This paper proposes a framework RetGen to solve the Retrieval grounded text generation task. It consists of a dense document retriever and a knowledge-grounded text generator.</p>
 <h3 id=document-retriever>Document Retriever<a hidden class=anchor aria-hidden=true href=#document-retriever>#</a></h3>
 <p>A document retriever (ANCE) narrows down the search for relevant document and accelerate join training with the text generator. Specifically, all documents and context queries are mapped to the same embedding space with separate learnable encoders. A score for each pair is computed by an inner-product, and top $K$ are selected as relevant documents (weight $p(z^{(k)}|x)$ is determined by softmax on scores). Maximum inner product search (MIPS) is employed to reduce searching time.</p>

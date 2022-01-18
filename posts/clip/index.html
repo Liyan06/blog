@@ -196,7 +196,7 @@ and approaches it as a multi-label sentence classification problem given the len
 </tbody>
 </table>
 <h3 id=label-type-and-examples>Label Type and examples<a hidden class=anchor aria-hidden=true href=#label-type-and-examples>#</a></h3>
-<img style=display:block;margin:auto src=/CLIP/action_type.png width=600>
+<img style=display:block;margin:auto src=/blog/CLIP/action_type.png width=600>
 <h2 id=model-structures>Model structures<a hidden class=anchor aria-hidden=true href=#model-structures>#</a></h2>
 <h3 id=baselines>Baselines<a hidden class=anchor aria-hidden=true href=#baselines>#</a></h3>
 <ul>
@@ -208,7 +208,7 @@ and approaches it as a multi-label sentence classification problem given the len
 <p>The paper shows that the neighboring context (one left + one right) is important gien two observations: <br>
 (1) an individual sentence may not have the full picture on the type of the action; <br>
 (2) neighboring sentences tend to share the same label (occurs for 27% of sentences).</p>
-<img style=display:block;margin:auto src=/CLIP/clip_structure.png width=600>
+<img style=display:block;margin:auto src=/blog/CLIP/clip_structure.png width=600>
 <h3 id=task-targeted-pre-training-ttp>Task-targeted pre-training (TTP)<a hidden class=anchor aria-hidden=true href=#task-targeted-pre-training-ttp>#</a></h3>
 <p><em>Task-targeted pre-training (TTP)</em> uses model predictions to select sentences for pre-training. From previous study, TTP requires less data and computation, yet attains comparable performance to pre-training on large in-domain datasets.</p>
 <p>This technique is useful in scenarios in which users have large, domain-specific, private datasets and specific tasks, and if effective public models does not exist for a given task.</p>
@@ -223,11 +223,11 @@ and approaches it as a multi-label sentence classification problem given the len
 (2) <em>Sentence switching.</em> Swap the focus sentence with another randomly chosen sentence from the same document with certain probability, and predict whether the focus sentence was swapped using the context sentences.</p>
 <h2 id=evaluation>Evaluation<a hidden class=anchor aria-hidden=true href=#evaluation>#</a></h2>
 <p>Evaluation metrics are Micro/Macro F1 & AUC, and binary F1.</p>
-<img style=display:block;margin:auto src=/CLIP/result.png width=550>
+<img style=display:block;margin:auto src=/blog/CLIP/result.png width=550>
 <p>(1) The results demonstrate the importance of domain-specific pre-training. <br>
 (2) Using neighboring sentences (models with &ldquo;+Context&rdquo;) provides a performance boost across all metrics. <br>
 (3) When using just 250k sentences from the MIMIC discharge notes for pre-training (TTPBERT-Context 250K), task results are competitive with and in some cases exceed MIMIC-DNoteBERT+Context, which is pre-trained on all MIMIC discharge notes.</p>
-<img style=display:block;margin:auto src=/CLIP/average_f1.png width=550>
+<img style=display:block;margin:auto src=/blog/CLIP/average_f1.png width=550>
 <p>The in-domain pre-training for MIMIC-DNote-BERT models provides gains for nearly all label types, and including context also gives a boost to the F1 score of most labels.</p>
 <h2 id=error-analysis>Error Analysis<a hidden class=anchor aria-hidden=true href=#error-analysis>#</a></h2>
 <p>(1) Large amount of tokenization errors on clinical jargon, abbreviations, and misspellings. Add explicit clinical knowledge is necessary. <br>

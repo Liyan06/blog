@@ -110,7 +110,7 @@ Paper reference: <a href=https://arxiv.org/pdf/2009.01325.pdf>https://arxiv.org/
 (3) distributional shift during sampling can degrade performance; \</p>
 <p>Quality can often be improved significantly by non-uniform sampling strategies such as beam search, but these can lead to repetition and other undesirable artifacts. Optimizing for quality may be a principled approach to overcoming these problems.</p>
 <h2 id=methods>Methods<a hidden class=anchor aria-hidden=true href=#methods>#</a></h2>
-<img style=display:block;margin:auto src=/learning_to_summariza/policy_training.png width=550>
+<img style=display:block;margin:auto src=/blog/learning_to_summariza/policy_training.png width=550>
 <p>Methods consist of three steps (use the TL;DR Reddit post dataset):</p>
 <p><strong>Step 1: Collect samples from existing policies and send comparisons to humans.</strong> For each Reddit post, we sample summaries from several sources including the current policy, initial policy, original reference summaries and various baselines. We send a batch of pairs of summaries to our human evaluators, who are tasked with selecting the best summary of a given Reddit post.</p>
 <p><strong>Step 2: Learn a reward model from human comparisons.</strong> Given a post and a candidate summary, we train a reward model to predict the log odds that this summary is the better one, as judged by our labelers (predict human-preferred summary).</p>

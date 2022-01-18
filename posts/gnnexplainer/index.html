@@ -105,7 +105,7 @@ Paper reference: <a href=https://arxiv.org/pdf/1903.03894.pdf>https://arxiv.org/
 <h1 id=contribution>Contribution<a hidden class=anchor aria-hidden=true href=#contribution>#</a></h1>
 <p>The paper proposes GNNEXPLAINER, a model-agnostic approach for providing interpretable explanations for predictions of <em>any</em> GNN-based model on <em>any</em> graph-based machine learning task.</p>
 <p>Specifically, given an instance, GNNEXPLAINER identifies (1) a compact subgraph structure that maximizes the mutual information with GNN’s prediction and (2) a small subset of node features that have a crucial role in GNN’s prediction. Further, GNNEXPLAINER can generate consistent and concise explanations for an entire class of instances.</p>
-<img style=display:block;margin:auto src=/gnnexplainer/graph.png width=520>
+<img style=display:block;margin:auto src=/blog/gnnexplainer/graph.png width=520>
 <h1 id=details>Details<a hidden class=anchor aria-hidden=true href=#details>#</a></h1>
 <p>GNNEXPLAINER provides explanations for any GNN that can be formulated in terms of (1) message passing; (2) feature aggregation; (3) parameters update computations.</p>
 <h2 id=single-instance-explanations>Single-instance explanations<a hidden class=anchor aria-hidden=true href=#single-instance-explanations>#</a></h2>
@@ -124,7 +124,7 @@ s.t. $\sum_{j} F_{j} \leq K_{F}$, where $Z$ is a $d$-dimensional random variable
 <h2 id=multi-instance-explanations>Multi-instance explanations<a hidden class=anchor aria-hidden=true href=#multi-instance-explanations>#</a></h2>
 <p>To obtain a global explanation of class $c$, the rough idea is to covert muiti-instance explanations to single-instance explanation.</p>
 <h2 id=explaination-visualization>Explaination Visualization<a hidden class=anchor aria-hidden=true href=#explaination-visualization>#</a></h2>
-<img style=display:block;margin:auto src=/gnnexplainer/compare.png width=580>
+<img style=display:block;margin:auto src=/blog/gnnexplainer/compare.png width=580>
 <p>GRAD: a gradient-based method, which computes gradient of the GNN’s loss function with respect to the adjacency matrix and the associated node features.</p>
 <p>ATT: a graph attention GNN (GAT) that learns attention weights for edges in the computation graph.</p>
 </div>

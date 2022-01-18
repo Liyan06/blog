@@ -116,7 +116,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.536.pdf>https://
 <h2 id=background>Background<a hidden class=anchor aria-hidden=true href=#background>#</a></h2>
 <h3 id=automatic-evaluation-protocol-qags>Automatic Evaluation Protocol QAGS<a hidden class=anchor aria-hidden=true href=#automatic-evaluation-protocol-qags>#</a></h3>
 <p>Previous work proposed QAGS (Question Answering and Generation for Summarization), an interpretable evaluation protocol designed to identify factual inconsistencies in a generated summary given the source document and the summary.</p>
-<img style=display:block;margin:auto src=/improving_factual_consistency/PAGS.png width=330>
+<img style=display:block;margin:auto src=/blog/improving_factual_consistency/PAGS.png width=330>
 <p>It consists of four steps: <br>
 (1) extracts named entities and noun phrases in the summary as candidate answers using an <em>answer extraction model</em>; <br>
 (2) a <em>question generation model</em> takes in the summary, concatenating with each candidate answer to generate a corresponding question; <br>
@@ -124,7 +124,7 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.536.pdf>https://
 (4) the answers from the QA model based on the summary and the input document are compared using word-level overlap.</p>
 <p>This paper discusses some drawbacks of this metric, mostly about computation inefficiency since it involves three separate models.</p>
 <h3 id=qagen>QAGen<a hidden class=anchor aria-hidden=true href=#qagen>#</a></h3>
-<img style=display:block;margin:auto src=/improving_factual_consistency/QAGen.png width=380>
+<img style=display:block;margin:auto src=/blog/improving_factual_consistency/QAGen.png width=380>
 <p>QAGen is an end-to-end model capable of generating both questions and answers from a summary.</p>
 <h2 id=automatic-evaluation-protocol-quals>Automatic Evaluation Protocol QUALS<a hidden class=anchor aria-hidden=true href=#automatic-evaluation-protocol-quals>#</a></h2>
 <p>This paper proposes a metric QUALS (QUestion Answering with Language model score for Summarization) to measure factual consistency.</p>

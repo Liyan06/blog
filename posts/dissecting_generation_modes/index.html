@@ -123,14 +123,14 @@ Paper reference: <a href=https://aclanthology.org/2021.acl-long.539.pdf>https://
 <h3 id=distance-metric>Distance Metric<a hidden class=anchor aria-hidden=true href=#distance-metric>#</a></h3>
 <p>The paper uses the L1 norm to measure the distance of two distributions over tokens for each timestep.</p>
 <h3 id=generation-mode-and-existing-memorizationbias>Generation Mode and Existing Memorization/Bias<a hidden class=anchor aria-hidden=true href=#generation-mode-and-existing-memorizationbias>#</a></h3>
-<img style=display:block;margin:auto src=/dissecting_generation_modes/map.png width=470>
+<img style=display:block;margin:auto src=/blog/dissecting_generation_modes/map.png width=470>
 <p>LM (lower left): decisions that can be easily made by using only decoder information, even without training or knowledge of the input document.</p>
 <p>CTX (upper right): cases where the input is needed to make the prediction.</p>
 <p>FT (lower right): cases where the finetuned decoder-only model is a close match but the pre-trained model is not. This reflects memorization of training summaries/ bias from fine-tuning training summaries.</p>
 <p>PT (upper left): cases where <strong>LM$\mathbf{_\emptyset}$</strong> agrees with <strong>S$\mathbf{_{full}}$</strong> but <strong>S$\mathbf{_\emptyset}$</strong> does not; that is, finetuning a decoder-only model causes it to work less well. This reflects memorization of data (bias) from the pre-training corpus (prior knowledge).</p>
 <h3 id=pos-tags-distribution-over-regions>POS Tags Distribution over regions<a hidden class=anchor aria-hidden=true href=#pos-tags-distribution-over-regions>#</a></h3>
 <p>Here is the top three POS tags of generated words for each region in XSum and the percentage of examples falling into each region. More than two thirds of generation steps actually do rely heavily on the context.</p>
-<img style=display:block;margin:auto src=/dissecting_generation_modes/percentage.png width=270>
+<img style=display:block;margin:auto src=/blog/dissecting_generation_modes/percentage.png width=270>
 <h2 id=stage-ii---attribution>Stage II - Attribution<a hidden class=anchor aria-hidden=true href=#stage-ii---attribution>#</a></h2>
 <p>The paper explores interpreting stepwise decisions that rely on the context using several different attribution methods. The goal is to see whether highlighted attributions are truly important for the generation of the next token.</p>
 <p>Experiements show that Integrated Gradient and Input Gradient are the best techniques to select content and reconstruct the model’s predicted token from perturbations of the input.</p>
