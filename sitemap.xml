@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tangliyan.com/blog/tags/evaluation/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/tags/factual/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tangliyan.com/blog/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/tags/nlp/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/tags/paper/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/posts/compression_transduction_and/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/posts/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/tags/</loc>
+    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/posts/pretrain_prompt/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tangliyan.com/blog/posts/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tangliyan.com/blog/tags/prompt/</loc>
-    <lastmod>2021-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/posts/knowledge_neurons/</loc>
@@ -34,9 +43,6 @@
   </url><url>
     <loc>https://tangliyan.com/blog/tags/summarization/</loc>
     <lastmod>2021-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/factual/</loc>
-    <lastmod>2021-09-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/posts/inspecting_the_factuality/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
@@ -64,9 +70,6 @@
   </url><url>
     <loc>https://tangliyan.com/blog/posts/gnnexplainer/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/evaluation/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/posts/factual_consistency_evaluation/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
