@@ -9,20 +9,11 @@
       <link>https://tangliyan.com/blog/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tangliyan.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>EVALUATION</title>
-      <link>https://tangliyan.com/blog/tags/evaluation/</link>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://tangliyan.com/blog/tags/evaluation/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tangliyan.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FACTUAL</title>
       <link>https://tangliyan.com/blog/tags/factual/</link>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://tangliyan.com/blog/tags/factual/</guid>
       <description></description>
@@ -31,7 +22,7 @@
     <item>
       <title>NLP</title>
       <link>https://tangliyan.com/blog/tags/nlp/</link>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://tangliyan.com/blog/tags/nlp/</guid>
       <description></description>
@@ -40,9 +31,18 @@
     <item>
       <title>PAPER</title>
       <link>https://tangliyan.com/blog/tags/paper/</link>
-      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://tangliyan.com/blog/tags/paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EVALUATION</title>
+      <link>https://tangliyan.com/blog/tags/evaluation/</link>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangliyan.com/blog/tags/evaluation/</guid>
       <description></description>
     </item>
     

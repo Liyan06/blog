@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tangliyan.com/blog/tags/factual/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/tags/nlp/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/tags/paper/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/posts/summac/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/posts/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tangliyan.com/blog/tags/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tangliyan.com/blog/tags/evaluation/</loc>
     <lastmod>2022-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tangliyan.com/blog/tags/factual/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/nlp/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/paper/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tangliyan.com/blog/posts/compression_transduction_and/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/posts/</loc>
-    <lastmod>2022-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tangliyan.com/blog/tags/</loc>
     <lastmod>2022-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tangliyan.com/blog/posts/pretrain_prompt/</loc>
